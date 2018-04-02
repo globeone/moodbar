@@ -49,6 +49,14 @@ env DESTDIR=... ninja -C builddir install
 
 See the [Meson documentation](http://mesonbuild.com/Quick-guide.html#using-meson-as-a-distro-packager) for more info.
 
+## For Ubuntu 16.04 LTS
+
+You need some dependancies to compile moodbar under Ubuntu 16.04 LTS
+The newer version of meson, the gstreamer1 libraries and headers and the Fast Fourier Transform library and headers
+
+`sudo apt install -t xenial-backports meson`
+`sudo apt install gstreamer1*:amd64`
+`sudo apt install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev fftw3 libfftw3-dev`
 
 ## Usage
 
